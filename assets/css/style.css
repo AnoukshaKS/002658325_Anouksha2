@@ -9,7 +9,7 @@ body {
 }
 
 #page-wraper {
-    background: url(../images/bg.jpeg) no-repeat center center fixed;
+    background: url(../images/bg.jpeg) rgba(0, 0, 0, 0.5) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,6 +17,16 @@ body {
     width: 100%;
     float: left;
     overflow: auto;
+}
+
+#center{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+
 }
 
 
@@ -40,18 +50,30 @@ a:hover {
 p {
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+    color: black;
 }
 
 h4 {
     font-size: 26px;
     font-weight: 700;
-    color: #fff;
+    color: black;
     letter-spacing: 0.25px;
 }
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;  
+    /* margin-left: 1000px; */
+ 
+}
+#footer-content {
+    background-color: #c2e9fb;
+   
+  }
 
 img {
-    width: 100%;
+    width: 70%;
     overflow: hidden;
 }
 
@@ -136,7 +158,7 @@ html {
 .menu .image img {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
+   
     text-align: center;
 }
 
@@ -288,7 +310,7 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
+   
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
@@ -302,7 +324,7 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: black;
 }
 
 .section-heading .line-dec {
@@ -314,8 +336,8 @@ html {
 
 .section-heading span {
     margin-top: 5px;
-    font-size: 16px;
-    color: #fff;
+    font-size: 20px;
+    color: black;
     letter-spacing: 0.5px;
 }
 
@@ -343,7 +365,7 @@ button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color: #a43f49;
+    color: #d04855;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -356,7 +378,7 @@ button {
 
 button:hover {
     outline: none;
-    background-color: #a43f49;
+    background-color: #d84756;
     color: #fff;
 }
 
@@ -434,35 +456,35 @@ button:hover {
 }
 
 .service-item .first-service-icon {
-    background-image: url(../images/first-white-icon.png);
+    background-image: url(../images/iw1.png);
 }
 
 .service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
+    background-image: url(../images/1b2.png);
 }
 
 .service-item .second-service-icon {
-    background-image: url(../images/second-white-icon.png);
+    background-image: url(../images/2w1.png);
 }
 
 .service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
+    background-image: url(../images/2r2.png);
 }
 
 .service-item .third-service-icon {
-    background-image: url(../images/third-white-icon.png);
+    background-image: url(../images/i4w.jpeg);
 }
 
 .service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
+    background-image: url(../images/i4r.png);
 }
 
 .service-item .fourth-service-icon {
-    background-image: url(../images/fourth-white-icon.png);
+    background-image: url(../images/3w.png);
 }
 
 .service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
+    background-image: url(../images/3w.png);
 }
 
 
@@ -539,7 +561,7 @@ section.my-work .section-heading {
 }
 
 .lazyloading {
-    background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
+    background: #f7f7f7 url(//assets/images/loading.png) no-repeat center;
     min-height: 60px;
 }
 
@@ -577,7 +599,7 @@ figure.snip1321 span {
 figure.snip1321 i {
   position: relative!important;
   font-size: 18px;
-  background-color: #a43f49;
+  background-color: #290b0e;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -632,6 +654,116 @@ section.contact-me {
     border-bottom: none;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+   
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+ 
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color:white;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+
 #contact input {
     background-color: rgba(250,250,250,0.1);
     border: 1px solid rgba(250,250,250,1);
@@ -674,7 +806,7 @@ section.contact-me {
 }
 
 .send-email {
-    color: #a43f49;
+    color: #3f46a4;
 }
 
 @media screen and (max-width: 1680px) {
@@ -769,7 +901,9 @@ section.contact-me {
     }
 
     .image-mobile a img {
-        border-radius: 50%;
+        border-style: double;
+        border-color: black;
+        border-radius: 34px;
     }
 
     #menu-toggle,
